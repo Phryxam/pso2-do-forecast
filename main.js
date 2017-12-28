@@ -329,11 +329,11 @@
                 });
                 var out = this._out;
                 out.clear();
-                results.forEach(function (date, orders, meseta, exp) {
+                results.forEach(function (date, orders, mesetas, exps) {
                     out.println(date + ':');
-                    orders.forEach(function (order,meseta,exp) {
+                    orders.forEach(function (order,idx) {
                         out.println('  ' + order);
-                        out.println('     ' + '♢:'+meseta+'   XP:'+exp);
+                        out.println('     ' + '♢:'+mesetas[idx]+'   XP:'+exps[idx]);
                     });
                 });
             }
