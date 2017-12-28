@@ -331,7 +331,7 @@
                 out.clear();
                 results.forEach(function (date, orders, meseta, exp) {
                     out.println(date + ':');
-                    orders.forEach(function (order) {
+                    orders.forEach(function (order,meseta,exp) {
                         out.println('  ' + order);
                         out.println('     ' + '♢:'+meseta+'   XP:'+exp);
                     });
