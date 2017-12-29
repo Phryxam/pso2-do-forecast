@@ -329,14 +329,10 @@
                 });
                 var out = this._out;
                 out.clear();
-                results.forEach(function (date, orders, mesetas, exps) {
+                results.forEach(function (date, orders) {
                     out.println(date + ':');
                     orders.forEach(function (order,idx) {
                         out.println('  ' + order);
-<<<<<<< HEAD
-                        out.println('     ' + '♢:'+mesetas[idx]+'   XP:'+exps[idx]);
-=======
->>>>>>> parent of 6ae1dc7... Added Mes. and XP values and Placeholders.
                     });
                 });
             }
